@@ -10,7 +10,7 @@ router.route("/")
 router.route("/:orderId")
 .get(controller.read)
 .put(controller.update)
-.delete(controller.destroy)
+.delete(controller.delete)
 .all(methodNotAllowed)
 
 module.exports = router;
