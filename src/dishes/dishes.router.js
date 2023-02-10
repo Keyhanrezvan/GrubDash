@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const controller = require("./dishes.controller")
-const methodNotAllowed = required("../errors/methodNotAllowed")
+const methodNotAllowed = require("../errors/methodNotAllowed")
 
 router.route("/:dishId")
 .get(controller.read)
